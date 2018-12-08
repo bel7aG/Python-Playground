@@ -86,4 +86,32 @@ print(newList)
 newList.sort(key = lambda str: str.lower())
 print(newList)                                # ==> last two are the same but str.lower faster
 newList.sort(key = str.lower)
-print(newList)
+print(newList, end = "\n\n\n\n")
+
+#   len(list) max(list) min(list)
+print(len(newList)) # 8
+print(min(newList)) # /bel7aG
+print(max(newList)) # www.github.com
+
+                        #   NOW jump to tuple (same as list but it is unchanged)  #
+
+
+# Tuples are a group of values like a list and are manipulated in similar ways.
+# But, tuples are fixed in size once they are assigned.
+# In Python the fixed size is considered immutable as compared to a list that is
+# dynamic and mutable. Tuples are defined by parenthesis ().
+
+
+myTuple = (1, 2, 44, 4, 6) #   (1, 2, 44, 4, 6)
+print("\t\t\tTUPLE \n", myTuple, "%s %d" % ("item number 3:", myTuple[2]), sep = "\n")
+
+#convert tuple into a list and the inverse
+tupleToList = list(myTuple)#   [1, 2, 44, 4, 6]
+print(tupleToList)
+listToTuple = tuple(tupleToList)#   (1, 2, 44, 4, 6)
+print(listToTuple)
+
+#   len(list) max(list) min(list)
+print(len(myTuple)) # 5
+print(min(myTuple)) # 1
+print(max(myTuple)) # 44
