@@ -63,6 +63,9 @@ combinedList = [bel7aG, listInsideList]
 print(combinedList, end = '\n\n')
 print(combinedList[0][0], ' is a ', combinedList[1][1][0], ' Developer', end = '\n\n')
 
+print("okookokok", combinedList)
+del(combinedList[0])
+print("okookokok", combinedList)
                             #   List methods    #
 
 #   list.append(object) an item inside a list
