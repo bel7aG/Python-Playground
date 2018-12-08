@@ -57,4 +57,8 @@ print(bel7aGCopy)
 
 #We can put List inside an list
 listInsideList = [['Python', 'django', 'tensorflow'], ['Javascript', 'NodeJs', 'ReactJs', 'VueJS', 'tensorflowJS', 'threejs']]
-print("%s vs %s \n==>%s" % (listInsideList[0][1], listInsideList[1][1], 'Django Lose'))
+print("%s vs %s \n==>%s" % (listInsideList[0][1], listInsideList[1][1], 'Django Lose'), end = '\n\n')
+
+combinedList = [bel7aG, listInsideList]
+print(combinedList, end = '\n\n')
+print(combinedList[0][0], ' is a ', combinedList[1][1][0], ' Developer', end = '\n\n')
