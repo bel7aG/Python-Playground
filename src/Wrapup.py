@@ -63,9 +63,9 @@ combinedList = [bel7aG, listInsideList]
 print(combinedList, end = '\n\n')
 print(combinedList[0][0], ' is a ', combinedList[1][1][0], ' Developer', end = '\n\n')
 
-print("okookokok", combinedList)
+print(combinedList)
 del(combinedList[0])
-print("okookokok", combinedList)
+print(combinedList)
                             #   List methods    #
 
 #   list.append(object) an item inside a list
@@ -95,6 +95,12 @@ print(newList, end = "\n\n\n\n")
 print(len(newList)) # 8
 print(min(newList)) # /bel7aG
 print(max(newList)) # www.github.com
+
+#list.count(whatICount)
+x = newList.count('www.github.com') # 1
+print(x)
+index = newList.index('www.github.com')
+print(index) #7
 
                         #   NOW jump to tuple (same as list but it is unchanged)  #
 
