@@ -45,7 +45,7 @@ bel7aGUrl = bel7aG[3] + bel7aG[-3] + bel7aG[6] + bel7aG[-2]
 print('this is my github url', end = '\t')
 print(bel7aGUrl, end = '\n\n')
 
-#[:] operator work with strings and list and maybe others wanna see [( [x ):( y-1[ )]
+#[:] operator work with strings and list and maybe others wanna see [( [x ):( y[ )]
 #[:] with string
 bel7aGUrl = bel7aGUrl[0:-1]
 print(bel7aGUrl)
@@ -62,3 +62,20 @@ print("%s vs %s \n==>%s" % (listInsideList[0][1], listInsideList[1][1], 'Django 
 combinedList = [bel7aG, listInsideList]
 print(combinedList, end = '\n\n')
 print(combinedList[0][0], ' is a ', combinedList[1][1][0], ' Developer', end = '\n\n')
+
+                            #   List methods    #
+
+#   list.append(object) an item inside a list
+bel7aG.append('Web Always Win')
+print(bel7aG[-1]) #   Web Always Win
+
+#   list.insert(index, object)
+
+bel7aG.insert(0, 'Pythooooniiii')
+print(bel7aG[0]) #  Pythooooniiii
+
+#   list.filter(function, list)
+newList = list(filter(lambda element: isinstance(element, str), bel7aG)) # just the strings
+print("new List", newList, sep = "\n\n", end = "\n\n")
+
+print(newList[-2][-3:len(newList[-2])]) #  com
