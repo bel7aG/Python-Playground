@@ -79,3 +79,11 @@ newList = list(filter(lambda element: isinstance(element, str), bel7aG)) # just 
 print("new List", newList, sep = "\n\n", end = "\n\n")
 
 print(newList[-2][-3:len(newList[-2])]) #  com
+
+#   list.sort()
+newList.sort()
+print(newList)
+newList.sort(key = lambda str: str.lower())
+print(newList)                                # ==> last two are the same but str.lower faster
+newList.sort(key = str.lower)
+print(newList)
