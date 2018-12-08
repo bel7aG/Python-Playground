@@ -1,0 +1,3 @@
+stringOne = 'string'
+
+stringTwo = stringOne[:]
