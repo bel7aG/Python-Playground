@@ -41,6 +41,20 @@ print("%s %s %s %s %d %s" % ('python now inspire me', thinkLikeItIsYouFirstStrin
                             #         List        #
 
 bel7aG = ['Belhassen', "Gharsallah", 22, 'https', '://', '/bel7aG', 'www.github.com']
-bel7aGUrl = bel7aG[3] + bel7aG[4] + bel7aG[6] + bel7aG[5]
+bel7aGUrl = bel7aG[3] + bel7aG[-3] + bel7aG[6] + bel7aG[-2]
 print('this is my github url', end = '\t')
+print(bel7aGUrl, end = '\n\n')
+
+#[:] operator work with strings and list and maybe others wanna see [( [x ):( y-1[ )]
+#[:] with string
+bel7aGUrl = bel7aGUrl[0:-1]
 print(bel7aGUrl)
+
+#[:] with List
+bel7aGCopy = bel7aG[3:5] + bel7aG[5:7]
+print(bel7aGCopy)
+
+
+#We can put List inside an list
+listInsideList = [['Python', 'django', 'tensorflow'], ['Javascript', 'NodeJs', 'ReactJs', 'VueJS', 'tensorflowJS', 'threejs']]
+print("%s vs %s \n==>%s" % (listInsideList[0][1], listInsideList[1][1], 'Django Lose'))
