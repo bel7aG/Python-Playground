@@ -25,6 +25,10 @@ print('8 ** 4 = ', 8 ** 4)
 
                             #       String       #
 
+name = 'belhassen gharsallah'   #belhassen gharsallah
+print(name.title())             #Belhassen Gharsallah
+
+
 thinkLikeItIsYouFirstString = "\"is python better than Javascript dont think so"
 
 print(thinkLikeItIsYouFirstString)
@@ -67,6 +71,9 @@ print(combinedList)
 del(combinedList[0])
 print(combinedList)
                             #   List methods    #
+
+splitAllTheCharsIntoList = list(name)
+print(splitAllTheCharsIntoList)
 
 #   list.append(object) an item inside a list
 bel7aG.append('Web Always Win')
@@ -154,7 +161,29 @@ print(me.values())
                         #   Conditions   #
 print('\n\n\n\t\t\tConditions')
 id = 'bel7aG'
-if (id == 'bel7aG') :
+if (id == 'bel7aG'):
     print('bel7aG you are logged in')
 else:
     print('bel7aG is missed in our database')
+
+if id != 'bel7aG':
+    print('is that you owner ?')
+elif isinstance(id, str):
+    print('finally i make sure you are WELCOME')
+else:
+    print('go Home Hacker this is python idiot GO HOOOOOOOME')
+
+if (len(id) > 3 and isinstance(id, str)):
+    print('welcome SIR')
+
+if id[-1] == 'G':
+    print('this is my big G')
+
+
+                            #      LOOPS      #
+print('\n\n\t\t\t\tLOOPS')
+for o in range(1, len(name) + 1):
+    print(o, end = '  ')
+print()
+myList = ['name', (lambda x: x + 2), 22, True, False]
+print(myList[1](33))
