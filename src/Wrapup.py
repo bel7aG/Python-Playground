@@ -185,5 +185,42 @@ print('\n\n\t\t\t\tLOOPS')
 for o in range(1, len(name) + 1):
     print(o, end = '  ')
 print()
-myList = ['name', (lambda x: x + 2), 22, True, False]
-print(myList[1](33))
+
+myList = ['name', 'ok', (lambda x: x ** 2), 22, True, False]
+print(type(myList[1]))
+print('\n\n\n')
+
+for o in range(len(myList)):
+    print()
+    if (hasattr(myList[o], '__call__')):
+        print('******')
+        print(myList[o](44))
+        print('******')
+    else:
+        print('\n\n', myList[o])
+
+#Matrix LOOP
+matrix = [['a', 'b', 'c', 'd', 'e'], ['A', 'B', 'C', 'D'], [1, 2, 3]]
+matrixMax = max(matrix, key = len);
+print(matrixMax) #['A', 'B', 'C', 'D']
+print()
+for l in range(len(matrix)):
+    for c in range(len(matrix[l])):
+        print(matrix[l][c], end = '\t')
+    print()
+
+randomNum = random.randrange(0, 20)
+while (randomNum != 10):
+    print('random Number', randomNum, sep = '\t')
+    randomNum = random.randrange(0, 11)
+
+
+                        #   Functions   #
+
+def abc(a = 'a', b = 'b', c = 'c'):
+    return a * (b + c)
+
+sum = lambda x = '': 11 + 1
+print(sum())
+
+print(abc(b = 1, a = 0, c = 1)) # i can do that in python hmmm good
