@@ -124,3 +124,37 @@ print(listToTuple)
 print(len(myTuple)) # 5
 print(min(myTuple)) # 1
 print(max(myTuple)) # 44
+
+                            #   Dectionnary    #
+print("\n\n\n\t\t\tDectionnary")
+me = {
+    'name': 'Belhassen',
+    'surname': 'Gharsallah',
+    'age': 22,
+    'github': 'https://www.github.com/bel7aG'
+}
+
+print("\n\n", me['name'])
+print(me)
+del me['name']
+print(me)
+
+me['name'] = 'lola'
+print(me)
+
+print(len(me))
+print(min(me))
+print(max(me))
+
+print(me.get('age'))
+
+print(me.keys())
+print(me.values())
+
+                        #   Conditions   #
+print('\n\n\n\t\t\tConditions')
+id = 'bel7aG'
+if (id == 'bel7aG') :
+    print('bel7aG you are logged in')
+else:
+    print('bel7aG is missed in our database')
