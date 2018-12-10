@@ -179,6 +179,10 @@ if (len(id) > 3 and isinstance(id, str)):
 if id[-1] == 'G':
     print('this is my big G')
 
+x = 1
+if x is 1:
+    print('waw')
+
 
                             #      LOOPS      #
 print('\n\n\t\t\t\tLOOPS')
@@ -201,7 +205,7 @@ for o in range(len(myList)):
 
 #Matrix LOOP
 matrix = [['a', 'b', 'c', 'd', 'e'], ['A', 'B', 'C', 'D'], [1, 2, 3]]
-matrixMax = max(matrix, key = len);
+matrixMax = max(matrix, key = len)
 print(matrixMax) #['A', 'B', 'C', 'D']
 print()
 for l in range(len(matrix)):
@@ -220,7 +224,7 @@ while (randomNum != 10):
 def abc(a = 'a', b = 'b', c = 'c'):
     return a * (b + c)
 
-sum = lambda x = '': 11 + 1
-print(sum())
+sum = lambda x = 0: 11 + 1
+print(sum(2))
 
-print(abc(b = 1, a = 0, c = 1)) # i can do that in python hmmm good
+print(abc(b=1, a=0, c=1)) # i can do that in python hmmm good
